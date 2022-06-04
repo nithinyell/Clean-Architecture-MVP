@@ -5,20 +5,27 @@
 //  Created by Nithin on 2022-06-03.
 //
 
+protocol AlbumsPesenterDelegate {
+
+    func albumPresenter(albums: [Album])
+}
+
 struct AlbumsPesenter {
     
-    func presentAlbums(completion: @escaping ([Album]) -> Void) {
+    var delegate: AlbumsPesenterDelegate?
+    
+    func present(media type: MediaType) {
         
         let interactor = AlbumInteractor()
         interactor.delegate = Network()
         
-        interactor.fetchAlbums { result in
+        interactor.fetch(media: type) { result in
             
             switch result {
             case .success(let albums):
-                completion(albums)
+                delegate?.albumPresenter(albums: albums)
             case .failure(_):
-                completion([Album]())
+                delegate?.albumPresenter(albums: [Album]())
             }
         }
     }

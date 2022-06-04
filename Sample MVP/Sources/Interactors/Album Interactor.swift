@@ -7,18 +7,15 @@
 
 import Foundation
 
-enum ParserError: Error {
-    
-    case parseError
-}
-
 class AlbumInteractor {
     
     var delegate: NetworkDelegate?
     
-    func fetchAlbums(completion: @escaping (Result<[Album], AlbumError>) -> Void) {
+    func fetch(media type: MediaType, completion: @escaping (Result<[Album], AlbumError>) -> Void) {
         
-        delegate?.callApi(url: Constants.ProdAPI, completion: { result in
+        let endPoint = "\(type.rawValue)/\(type.feed())/100/\(type.type()).json"
+        
+        delegate?.callApi(url: Constants.BASEURL + endPoint, completion: { result in
             
             switch result {
                 

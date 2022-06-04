@@ -7,7 +7,7 @@
 
 struct Constants {
     
-    static let ProdAPI = "https://rss.applemarketingtools.com/api/v2/us/music/most-played/50/albums.json"
+    static let BASEURL = "https://rss.applemarketingtools.com/api/v2/us/"
     
     struct AlbumsController {
         static let tableViewCellIdentifier = "cell"

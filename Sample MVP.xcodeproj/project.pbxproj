@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EBC1CBC284B1DF3009E59CC /* AlbumsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBC1CBB284B1DF3009E59CC /* AlbumsTableViewCell.swift */; };
+		1EBC1CBE284B2EBB009E59CC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBC1CBD284B2EBB009E59CC /* Extensions.swift */; };
 		A869ED8A284B02D6002E7896 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A869ED89284B02D6002E7896 /* AppDelegate.swift */; };
 		A869ED8C284B02D6002E7896 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A869ED8B284B02D6002E7896 /* SceneDelegate.swift */; };
 		A869ED8E284B02D6002E7896 /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A869ED8D284B02D6002E7896 /* AlbumsViewController.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1EBC1CBB284B1DF3009E59CC /* AlbumsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsTableViewCell.swift; sourceTree = "<group>"; };
+		1EBC1CBD284B2EBB009E59CC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A869ED86284B02D6002E7896 /* Sample MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample MVP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A869ED89284B02D6002E7896 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A869ED8B284B02D6002E7896 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1EBC1CBA284B1DD2009E59CC /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1EBC1CBB284B1DF3009E59CC /* AlbumsTableViewCell.swift */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
 		A869ED7D284B02D6002E7896 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +116,7 @@
 		A869EDA0284B0394002E7896 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				1EBC1CBA284B1DD2009E59CC /* Custom Cells */,
 				A869EDA9284B081D002E7896 /* Helpers */,
 				A869EDA8284B06E1002E7896 /* Interactors */,
 				A869EDA1284B03A1002E7896 /* Network */,
@@ -134,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				A869EDAA284B082D002E7896 /* Constants.swift */,
+				1EBC1CBD284B2EBB009E59CC /* Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -214,6 +228,8 @@
 				A869EDA5284B0487002E7896 /* NetworkManager.swift in Sources */,
 				A869EDA3284B03C6002E7896 /* Albums Model.swift in Sources */,
 				A869EDAD284B0AA0002E7896 /* AlbumsPresenter.swift in Sources */,
+				1EBC1CBE284B2EBB009E59CC /* Extensions.swift in Sources */,
+				1EBC1CBC284B1DF3009E59CC /* AlbumsTableViewCell.swift in Sources */,
 				A869EDAB284B082D002E7896 /* Constants.swift in Sources */,
 				A869ED8C284B02D6002E7896 /* SceneDelegate.swift in Sources */,
 				A869EDA7284B06B8002E7896 /* Album Interactor.swift in Sources */,
@@ -292,7 +308,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -346,7 +362,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
